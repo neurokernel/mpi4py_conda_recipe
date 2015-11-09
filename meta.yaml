@@ -1,6 +1,5 @@
-{% set build = 0 %}
-{% set rev = '6bf1c26' %}
-{% set req = {'openmpi':'>=1.10.0'} %}
+{% set build = 1 %}
+{% set req = {'openmpi':'>=1.10.1'} %}
 {% set version = '2.0.0' %}
 
 package:
@@ -29,6 +28,6 @@ requirements:
 
 build:
   number: {{build}}
-  string: py{{py}}_openmpi1100_{{build}}
+  string: py{{py}}_openmpi1101_{{build}}
   script: python setup.py build_exe install
 
